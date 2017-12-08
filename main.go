@@ -1,10 +1,7 @@
 package main
 
 func main() {
-	cards := newDeck()
+	cards := readFromFile("myCards.txt")
 
-	hand, remainingDeck := cards.deal(2)
-
-	hand.print()
-	remainingDeck.print()
+	cards.print()
 }
